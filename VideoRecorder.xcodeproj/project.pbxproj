@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		722C3EF428157259007A498A /* PhotoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C3EF328157259007A498A /* PhotoPreviewViewController.swift */; };
 		72F11F9B280D33030070D3AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F11F9A280D33030070D3AE /* AppDelegate.swift */; };
 		72F11F9D280D33030070D3AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F11F9C280D33030070D3AE /* SceneDelegate.swift */; };
-		72F11F9F280D33030070D3AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F11F9E280D33030070D3AE /* ViewController.swift */; };
+		72F11F9F280D33030070D3AE /* RecordVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F11F9E280D33030070D3AE /* RecordVideoViewController.swift */; };
 		72F11FA2280D33030070D3AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F11FA0280D33030070D3AE /* Main.storyboard */; };
 		72F11FA4280D33050070D3AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F11FA3280D33050070D3AE /* Assets.xcassets */; };
 		72F11FA7280D33050070D3AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F11FA5280D33050070D3AE /* LaunchScreen.storyboard */; };
 		72F11FB2280D33050070D3AE /* VideoRecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F11FB1280D33050070D3AE /* VideoRecorderTests.swift */; };
 		72F11FBC280D33050070D3AE /* VideoRecorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F11FBB280D33050070D3AE /* VideoRecorderUITests.swift */; };
 		72F11FBE280D33050070D3AE /* VideoRecorderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F11FBD280D33050070D3AE /* VideoRecorderUITestsLaunchTests.swift */; };
+		72F4BB4F280EE8B90029A4C7 /* CapturePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F4BB4E280EE8B90029A4C7 /* CapturePhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		722C3EF328157259007A498A /* PhotoPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewViewController.swift; sourceTree = "<group>"; };
 		72F11F97280D33030070D3AE /* VideoRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F11F9A280D33030070D3AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72F11F9C280D33030070D3AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72F11F9E280D33030070D3AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72F11F9E280D33030070D3AE /* RecordVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoViewController.swift; sourceTree = "<group>"; };
 		72F11FA1280D33030070D3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72F11FA3280D33050070D3AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72F11FA6280D33050070D3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		72F11FB7280D33050070D3AE /* VideoRecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoRecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F11FBB280D33050070D3AE /* VideoRecorderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorderUITests.swift; sourceTree = "<group>"; };
 		72F11FBD280D33050070D3AE /* VideoRecorderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72F4BB4E280EE8B90029A4C7 /* CapturePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,13 @@
 			children = (
 				72F11F9A280D33030070D3AE /* AppDelegate.swift */,
 				72F11F9C280D33030070D3AE /* SceneDelegate.swift */,
-				72F11F9E280D33030070D3AE /* ViewController.swift */,
+				72F11F9E280D33030070D3AE /* RecordVideoViewController.swift */,
+				72F4BB4E280EE8B90029A4C7 /* CapturePhotoViewController.swift */,
 				72F11FA0280D33030070D3AE /* Main.storyboard */,
 				72F11FA3280D33050070D3AE /* Assets.xcassets */,
 				72F11FA5280D33050070D3AE /* LaunchScreen.storyboard */,
 				72F11FA8280D33050070D3AE /* Info.plist */,
+				722C3EF328157259007A498A /* PhotoPreviewViewController.swift */,
 			);
 			path = VideoRecorder;
 			sourceTree = "<group>";
@@ -258,7 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72F11F9F280D33030070D3AE /* ViewController.swift in Sources */,
+				72F4BB4F280EE8B90029A4C7 /* CapturePhotoViewController.swift in Sources */,
+				722C3EF428157259007A498A /* PhotoPreviewViewController.swift in Sources */,
+				72F11F9F280D33030070D3AE /* RecordVideoViewController.swift in Sources */,
 				72F11F9B280D33030070D3AE /* AppDelegate.swift in Sources */,
 				72F11F9D280D33030070D3AE /* SceneDelegate.swift in Sources */,
 			);
@@ -442,6 +450,8 @@
 				DEVELOPMENT_TEAM = 3A83C749KK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VideoRecorder/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needs Camera Permmision";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Needs Microphone Permmision";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -470,6 +480,8 @@
 				DEVELOPMENT_TEAM = 3A83C749KK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VideoRecorder/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needs Camera Permmision";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Needs Microphone Permmision";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
