@@ -19,6 +19,7 @@ class RecordVideoViewController: UIViewController {
 
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var previewView: UIView!
+    @IBOutlet weak var frameView: UIView!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var startEndButton: UIButton!
     
@@ -37,8 +38,8 @@ class RecordVideoViewController: UIViewController {
     var outputURL: URL?
     let storkeLayer = CAShapeLayer()
     var timer: Timer!
-    let maxVideoDuration = 5 //seconds
-    let minVideoDuration = 5 //seconds
+    let maxVideoDuration = 3 //seconds
+    let minVideoDuration = 3 //seconds
     var state: RecordingStates = .readyToRecord {
         didSet {
             switch state {
@@ -90,6 +91,10 @@ class RecordVideoViewController: UIViewController {
         super.viewDidLayoutSubviews()
         previewView.layer.cornerRadius = previewView.frame.size.height / 2
         cameraView.layer.cornerRadius = cameraView.frame.size.height / 2
+        frameView.layer.cornerRadius = frameView.frame.size.height / 2
+        frameView.layer.borderWidth = 1.0
+        frameView.layer.borderColor = UIColor.lightGray.withAlphaComponent(0.2).cgColor
+        frameView.backgroundColor = .clear
     }
     
     func setupView() {
@@ -109,9 +114,13 @@ class RecordVideoViewController: UIViewController {
     func animateBorder() {
         storkeLayer.fillColor = UIColor.clear.cgColor
         storkeLayer.strokeColor = UIColor.cyan.cgColor
-        storkeLayer.lineWidth = 10
-        storkeLayer.path = CGPath.init(roundedRect: cameraView.bounds, cornerWidth: cameraView.frame.size.height / 2, cornerHeight: cameraView.frame.size.height / 2, transform: nil)
-        cameraView.layer.addSublayer(storkeLayer)
+        storkeLayer.lineWidth = 5
+        let startAngle = -Double.pi / 2
+        let endAngle = startAngle + Double.pi * 2
+        let path = UIBezierPath(arcCenter: CGPoint(x: frameView.frame.size.width / 2, y: frameView.frame.size.height / 2)
+                                , radius: frameView.frame.height / 2, startAngle: startAngle, endAngle: endAngle, clockwise: true).cgPath
+        storkeLayer.path = path
+        frameView.layer.addSublayer(storkeLayer)
         
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.fromValue = CGFloat(0)

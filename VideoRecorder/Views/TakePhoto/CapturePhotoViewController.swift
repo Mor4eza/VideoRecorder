@@ -11,21 +11,24 @@ import AVFoundation
 class CapturePhotoViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     @IBOutlet weak var cameraView: UIView!
-
+    @IBOutlet weak var frameView: UIView!
     
     private let photoOutput = AVCapturePhotoOutput()
     private let captureSession = AVCaptureSession()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        cameraView.layer.cornerRadius = cameraView.frame.size.height / 2
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         openCamera()
+        cameraView.layer.cornerRadius = cameraView.frame.size.height / 2
+        frameView.backgroundColor = .clear
+        frameView.layer.cornerRadius = cameraView.frame.size.height / 2
+        frameView.layer.borderWidth = 2.0
+        frameView.layer.borderColor = UIColor.lightGray.cgColor
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -116,7 +119,22 @@ class CapturePhotoViewController: UIViewController, AVCapturePhotoCaptureDelegat
 
         let previewVC = self.storyboard?.instantiateViewController(withIdentifier: "PhotoPreviewViewController") as? PhotoPreviewViewController
         previewVC?.photo = flippedImage
+        previewVC?.photoPath = saveImageToDocumentDirectory(flippedImage)
         self.navigationController?.pushViewController(previewVC!, animated: true)
 
+    }
+    
+    func saveImageToDocumentDirectory(_ image: UIImage) -> String? {
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let fileName = "Selfie_Photo.jpeg"
+        let fileURL = documentsDirectory.appendingPathComponent(fileName)
+        if let data = image.jpegData(compressionQuality: 1.0){
+            do {
+                try data.write(to: fileURL)
+            } catch {
+                print("unable to save photo")
+            }
+        }
+        return fileURL.path
     }
 }

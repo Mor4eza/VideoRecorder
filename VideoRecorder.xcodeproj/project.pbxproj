@@ -8,10 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		722C3EF428157259007A498A /* PhotoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C3EF328157259007A498A /* PhotoPreviewViewController.swift */; };
+		727380AE28166E0500541DA2 /* DigitalAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380AD28166E0500541DA2 /* DigitalAuthViewModel.swift */; };
+		727380C928166E9200541DA2 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380B328166E9200541DA2 /* Observer.swift */; };
+		727380CA28166E9200541DA2 /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380B428166E9200541DA2 /* Observation.swift */; };
+		727380CB28166E9200541DA2 /* ObservationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380B528166E9200541DA2 /* ObservationManager.swift */; };
+		727380CC28166E9200541DA2 /* CustomBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380B728166E9200541DA2 /* CustomBindable.swift */; };
+		727380CD28166E9200541DA2 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380B828166E9200541DA2 /* Bindable.swift */; };
+		727380CE28166E9200541DA2 /* DynamicObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380BA28166E9200541DA2 /* DynamicObservable.swift */; };
+		727380CF28166E9200541DA2 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380BB28166E9200541DA2 /* Observable.swift */; };
+		727380D028166E9200541DA2 /* NotificationObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380BC28166E9200541DA2 /* NotificationObservable.swift */; };
+		727380D128166E9200541DA2 /* CurrentThreadScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380BE28166E9200541DA2 /* CurrentThreadScheduler.swift */; };
+		727380D228166E9200541DA2 /* EventScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380BF28166E9200541DA2 /* EventScheduler.swift */; };
+		727380D328166E9200541DA2 /* MainThreadScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380C028166E9200541DA2 /* MainThreadScheduler.swift */; };
+		727380D428166E9200541DA2 /* NSRecursiveLock+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380C228166E9200541DA2 /* NSRecursiveLock+Helpers.swift */; };
+		727380D528166E9200541DA2 /* NSObject+Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380C328166E9200541DA2 /* NSObject+Observer.swift */; };
+		727380D728166E9300541DA2 /* ValueChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380C628166E9200541DA2 /* ValueChange.swift */; };
+		727380D828166E9300541DA2 /* EventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380C728166E9200541DA2 /* EventHandler.swift */; };
+		727380D928166E9300541DA2 /* EventPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727380C828166E9200541DA2 /* EventPublisher.swift */; };
 		72F11F9B280D33030070D3AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F11F9A280D33030070D3AE /* AppDelegate.swift */; };
 		72F11F9D280D33030070D3AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F11F9C280D33030070D3AE /* SceneDelegate.swift */; };
 		72F11F9F280D33030070D3AE /* RecordVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F11F9E280D33030070D3AE /* RecordVideoViewController.swift */; };
-		72F11FA2280D33030070D3AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F11FA0280D33030070D3AE /* Main.storyboard */; };
+		72F11FA2280D33030070D3AE /* DigitalAuth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F11FA0280D33030070D3AE /* DigitalAuth.storyboard */; };
 		72F11FA4280D33050070D3AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F11FA3280D33050070D3AE /* Assets.xcassets */; };
 		72F11FA7280D33050070D3AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F11FA5280D33050070D3AE /* LaunchScreen.storyboard */; };
 		72F11FB2280D33050070D3AE /* VideoRecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F11FB1280D33050070D3AE /* VideoRecorderTests.swift */; };
@@ -39,11 +56,29 @@
 
 /* Begin PBXFileReference section */
 		722C3EF328157259007A498A /* PhotoPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewViewController.swift; sourceTree = "<group>"; };
+		727380AD28166E0500541DA2 /* DigitalAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalAuthViewModel.swift; sourceTree = "<group>"; };
+		727380B128166E9200541DA2 /* Hanson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hanson.h; sourceTree = "<group>"; };
+		727380B328166E9200541DA2 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		727380B428166E9200541DA2 /* Observation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
+		727380B528166E9200541DA2 /* ObservationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservationManager.swift; sourceTree = "<group>"; };
+		727380B728166E9200541DA2 /* CustomBindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBindable.swift; sourceTree = "<group>"; };
+		727380B828166E9200541DA2 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		727380BA28166E9200541DA2 /* DynamicObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicObservable.swift; sourceTree = "<group>"; };
+		727380BB28166E9200541DA2 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		727380BC28166E9200541DA2 /* NotificationObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObservable.swift; sourceTree = "<group>"; };
+		727380BE28166E9200541DA2 /* CurrentThreadScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentThreadScheduler.swift; sourceTree = "<group>"; };
+		727380BF28166E9200541DA2 /* EventScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventScheduler.swift; sourceTree = "<group>"; };
+		727380C028166E9200541DA2 /* MainThreadScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainThreadScheduler.swift; sourceTree = "<group>"; };
+		727380C228166E9200541DA2 /* NSRecursiveLock+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSRecursiveLock+Helpers.swift"; sourceTree = "<group>"; };
+		727380C328166E9200541DA2 /* NSObject+Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Observer.swift"; sourceTree = "<group>"; };
+		727380C628166E9200541DA2 /* ValueChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueChange.swift; sourceTree = "<group>"; };
+		727380C728166E9200541DA2 /* EventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventHandler.swift; sourceTree = "<group>"; };
+		727380C828166E9200541DA2 /* EventPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPublisher.swift; sourceTree = "<group>"; };
 		72F11F97280D33030070D3AE /* VideoRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F11F9A280D33030070D3AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72F11F9C280D33030070D3AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		72F11F9E280D33030070D3AE /* RecordVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoViewController.swift; sourceTree = "<group>"; };
-		72F11FA1280D33030070D3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72F11FA1280D33030070D3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DigitalAuth.storyboard; sourceTree = "<group>"; };
 		72F11FA3280D33050070D3AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72F11FA6280D33050070D3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72F11FA8280D33050070D3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +115,135 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7273809C2816521100541DA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				727380A928165A7400541DA2 /* TakePhoto */,
+				727380AB28165ADC00541DA2 /* PhotoPreview */,
+				727380AA28165AC500541DA2 /* RecordVideo */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		727380A62816584500541DA2 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		727380A928165A7400541DA2 /* TakePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				72F4BB4E280EE8B90029A4C7 /* CapturePhotoViewController.swift */,
+			);
+			path = TakePhoto;
+			sourceTree = "<group>";
+		};
+		727380AA28165AC500541DA2 /* RecordVideo */ = {
+			isa = PBXGroup;
+			children = (
+				72F11F9E280D33030070D3AE /* RecordVideoViewController.swift */,
+			);
+			path = RecordVideo;
+			sourceTree = "<group>";
+		};
+		727380AB28165ADC00541DA2 /* PhotoPreview */ = {
+			isa = PBXGroup;
+			children = (
+				722C3EF328157259007A498A /* PhotoPreviewViewController.swift */,
+			);
+			path = PhotoPreview;
+			sourceTree = "<group>";
+		};
+		727380AC28166DEF00541DA2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				727380AD28166E0500541DA2 /* DigitalAuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		727380AF28166E7C00541DA2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				727380B028166E9200541DA2 /* Hanson */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		727380B028166E9200541DA2 /* Hanson */ = {
+			isa = PBXGroup;
+			children = (
+				727380B128166E9200541DA2 /* Hanson.h */,
+				727380B228166E9200541DA2 /* Observation Manager */,
+				727380B628166E9200541DA2 /* Bindable */,
+				727380B928166E9200541DA2 /* Observable */,
+				727380BD28166E9200541DA2 /* Event Scheduler */,
+				727380C128166E9200541DA2 /* Helpers */,
+				727380C528166E9200541DA2 /* Event Publisher */,
+			);
+			path = Hanson;
+			sourceTree = "<group>";
+		};
+		727380B228166E9200541DA2 /* Observation Manager */ = {
+			isa = PBXGroup;
+			children = (
+				727380B328166E9200541DA2 /* Observer.swift */,
+				727380B428166E9200541DA2 /* Observation.swift */,
+				727380B528166E9200541DA2 /* ObservationManager.swift */,
+			);
+			path = "Observation Manager";
+			sourceTree = "<group>";
+		};
+		727380B628166E9200541DA2 /* Bindable */ = {
+			isa = PBXGroup;
+			children = (
+				727380B728166E9200541DA2 /* CustomBindable.swift */,
+				727380B828166E9200541DA2 /* Bindable.swift */,
+			);
+			path = Bindable;
+			sourceTree = "<group>";
+		};
+		727380B928166E9200541DA2 /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				727380BA28166E9200541DA2 /* DynamicObservable.swift */,
+				727380BB28166E9200541DA2 /* Observable.swift */,
+				727380BC28166E9200541DA2 /* NotificationObservable.swift */,
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
+		727380BD28166E9200541DA2 /* Event Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				727380BE28166E9200541DA2 /* CurrentThreadScheduler.swift */,
+				727380BF28166E9200541DA2 /* EventScheduler.swift */,
+				727380C028166E9200541DA2 /* MainThreadScheduler.swift */,
+			);
+			path = "Event Scheduler";
+			sourceTree = "<group>";
+		};
+		727380C128166E9200541DA2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				727380C228166E9200541DA2 /* NSRecursiveLock+Helpers.swift */,
+				727380C328166E9200541DA2 /* NSObject+Observer.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		727380C528166E9200541DA2 /* Event Publisher */ = {
+			isa = PBXGroup;
+			children = (
+				727380C628166E9200541DA2 /* ValueChange.swift */,
+				727380C728166E9200541DA2 /* EventHandler.swift */,
+				727380C828166E9200541DA2 /* EventPublisher.swift */,
+			);
+			path = "Event Publisher";
+			sourceTree = "<group>";
+		};
 		72F11F8E280D33030070D3AE = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +267,16 @@
 		72F11F99280D33030070D3AE /* VideoRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				727380AF28166E7C00541DA2 /* Utils */,
+				727380AC28166DEF00541DA2 /* ViewModel */,
+				727380A62816584500541DA2 /* Style */,
+				7273809C2816521100541DA2 /* Views */,
 				72F11F9A280D33030070D3AE /* AppDelegate.swift */,
 				72F11F9C280D33030070D3AE /* SceneDelegate.swift */,
-				72F11F9E280D33030070D3AE /* RecordVideoViewController.swift */,
-				72F4BB4E280EE8B90029A4C7 /* CapturePhotoViewController.swift */,
-				72F11FA0280D33030070D3AE /* Main.storyboard */,
+				72F11FA0280D33030070D3AE /* DigitalAuth.storyboard */,
 				72F11FA3280D33050070D3AE /* Assets.xcassets */,
 				72F11FA5280D33050070D3AE /* LaunchScreen.storyboard */,
 				72F11FA8280D33050070D3AE /* Info.plist */,
-				722C3EF328157259007A498A /* PhotoPreviewViewController.swift */,
 			);
 			path = VideoRecorder;
 			sourceTree = "<group>";
@@ -239,7 +404,7 @@
 			files = (
 				72F11FA7280D33050070D3AE /* LaunchScreen.storyboard in Resources */,
 				72F11FA4280D33050070D3AE /* Assets.xcassets in Resources */,
-				72F11FA2280D33030070D3AE /* Main.storyboard in Resources */,
+				72F11FA2280D33030070D3AE /* DigitalAuth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +432,25 @@
 				72F4BB4F280EE8B90029A4C7 /* CapturePhotoViewController.swift in Sources */,
 				722C3EF428157259007A498A /* PhotoPreviewViewController.swift in Sources */,
 				72F11F9F280D33030070D3AE /* RecordVideoViewController.swift in Sources */,
+				727380CC28166E9200541DA2 /* CustomBindable.swift in Sources */,
+				727380D228166E9200541DA2 /* EventScheduler.swift in Sources */,
+				727380D428166E9200541DA2 /* NSRecursiveLock+Helpers.swift in Sources */,
+				727380CD28166E9200541DA2 /* Bindable.swift in Sources */,
+				727380CA28166E9200541DA2 /* Observation.swift in Sources */,
+				727380D928166E9300541DA2 /* EventPublisher.swift in Sources */,
 				72F11F9B280D33030070D3AE /* AppDelegate.swift in Sources */,
+				727380D028166E9200541DA2 /* NotificationObservable.swift in Sources */,
 				72F11F9D280D33030070D3AE /* SceneDelegate.swift in Sources */,
+				727380CB28166E9200541DA2 /* ObservationManager.swift in Sources */,
+				727380CF28166E9200541DA2 /* Observable.swift in Sources */,
+				727380CE28166E9200541DA2 /* DynamicObservable.swift in Sources */,
+				727380C928166E9200541DA2 /* Observer.swift in Sources */,
+				727380D828166E9300541DA2 /* EventHandler.swift in Sources */,
+				727380D128166E9200541DA2 /* CurrentThreadScheduler.swift in Sources */,
+				727380D528166E9200541DA2 /* NSObject+Observer.swift in Sources */,
+				727380AE28166E0500541DA2 /* DigitalAuthViewModel.swift in Sources */,
+				727380D328166E9200541DA2 /* MainThreadScheduler.swift in Sources */,
+				727380D728166E9300541DA2 /* ValueChange.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,12 +487,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		72F11FA0280D33030070D3AE /* Main.storyboard */ = {
+		72F11FA0280D33030070D3AE /* DigitalAuth.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				72F11FA1280D33030070D3AE /* Base */,
 			);
-			name = Main.storyboard;
+			name = DigitalAuth.storyboard;
 			sourceTree = "<group>";
 		};
 		72F11FA5280D33050070D3AE /* LaunchScreen.storyboard */ = {
@@ -454,9 +636,10 @@
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Needs Microphone Permmision";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = DigitalAuth;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,9 +667,10 @@
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Needs Microphone Permmision";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = DigitalAuth;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
